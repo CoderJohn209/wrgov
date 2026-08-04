@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Citizenship Application - Wræmberland</title>
-
+<link rel="icon" href="/img/coa.png" type="image/png" sizes="32x32">
   <style>
     body {
       background-color: #c0c0c0;
-      font-family: "Times New Roman", serif;
+      font-family: Arial, serif;
       color: black;
     }
 
@@ -74,7 +74,6 @@
       to { visibility: hidden; }
     }
 
-    /* Retro buttons */
     input[type="submit"], input[type="reset"] {
       border: 2px outset #fff;
       background: #c0c0c0;
@@ -96,9 +95,10 @@
 
   <form action="https://formspree.io/f/maewwdqr" method="POST">
 
-    <!-- Formspree settings -->
+    <!-- Formspree -->
     <input type="hidden" name="_subject" value="New Citizenship Application">
     <input type="hidden" name="_next" value="https://snpdwrgov.fyi/thanks.html">
+    <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_autoresponse" value="Your application has been received by Wræmberland.">
 
     <table>
@@ -196,7 +196,7 @@
         <td><input type="text" name="captcha" required></td>
       </tr>
 
-      <!-- Honeypot properly placed -->
+      <!-- Honeypot -->
       <tr style="display:none;">
         <td colspan="2">
           <input type="text" name="_gotcha">
@@ -216,7 +216,6 @@
       <br>
       <input type="submit" value="Submit Application">
       <input type="reset" value="Clear Form">
-
       <p><marquee behavior="alternate">ALL APPLICATIONS ARE REVIEWED MANUALLY</marquee></p>
     </div>
 
@@ -231,14 +230,34 @@
 
 </div>
 
-<!-- CAPTCHA validation -->
+<!-- CAPTCHA + redirect backup -->
 <script>
+const REDIRECT_URL = "https://snpdwrgov.fyi/thanks.html";
+const TIME_LIMIT = 10 * 60 * 1000;
+
+// Check recent submission
+const lastSubmit = localStorage.getItem("citizenship_submitted");
+if (lastSubmit) {
+  const now = Date.now();
+  if (now - parseInt(lastSubmit) < TIME_LIMIT) {
+    window.location.href = REDIRECT_URL;
+  }
+}
+
+// Form submit handler
 document.querySelector("form").addEventListener("submit", function(e) {
+
+  // CAPTCHA check
   var answer = document.querySelector('input[name="captcha"]').value.trim();
   if (answer !== "7") {
     alert("Incorrect security answer.");
     e.preventDefault();
+    return;
   }
+
+  // Save submission time
+  localStorage.setItem("citizenship_submitted", Date.now());
+
 });
 </script>
 
