@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Contact - Wræmberland</title>
+
+<link rel="icon" href="/img/coa.png" type="image/png" sizes="32x32">
+
+<style>
+
+body {
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-family: Impact, Arial Black, sans-serif;
+  color: #0075C9;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav {
+  background-color: #000080;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #F0F0F0;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Form spacing */
+
+input, textarea {
+  width: 95%;
+  font-family: Arial;
+  margin-top: 5px;
+}
+
+/* Mobile fix */
+
+@media(max-width: 900px){
+  table {
+    width: 95% !important;
+  }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header">
+  <div class="title">WRÆMBERLAND ONLINE</div>
+</div>
+
+
+<!-- NAV BAR -->
+<div class="nav">
+  <a href="/index.html">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">HISTORY</a>
+  <a href="/loipa/chit.html">CITIZENSHIP</a>
+  <a href="/loipa/cont.html"><u><i>CONTACT</i></u></a>
+</div>
+
+
+<br>
+
+
+<table border="0" width="800" align="center">
+
+<tr>
+
+<td width="500" valign="top">
+
+<div class="box">
+  <b>Contact Information</b>
+  <hr>
+  If you want to contact the Government of Wræmberland, please fill out this form.
+  A response will be sent to your email.
+</div>
+
+
+<div class="box">
+  <b>Contact Form</b>
+  <hr>
+
+  <form action="https://formspree.io/f/xrpzgkoa" method="POST">
+
+    <input type="hidden" name="_subject" value="Contact Form Submission">
+
+    <input type="hidden" name="_autoresponse" value="Your message has been received by the Government of Wræmberland.">
+
+    <!-- Name -->
+    Name:<br>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <!-- Email -->
+Contact (Email OR Citizen ID):<br>
+<input type="text" name="contact" placeholder="example@email.com OR WR-1024" required>
+<br><br>
+
+    <!-- Message -->
+    Message:<br>
+    <textarea name="message" rows="5" required></textarea>
+    <br><br>
+
+    <input type="submit" value="Send Message">
+    <input type="reset" value="Clear">
+
+    <p>
+      <marquee behavior="alternate">
+        MESSAGES ARE REVIEWED MANUALLY
+      </marquee>
+    </p>
+
+  </form>
+
+</div>
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 SNPDWRGOV | Best viewed in Firefox
+</div>
+
+
+</body>
+</html>
