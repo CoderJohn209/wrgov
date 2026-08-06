@@ -12,7 +12,17 @@ body {
   background-color: #FFFFFF;
   font-family: Arial, sans-serif;
 }
+  
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
 
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+  
 .title {
   font-family: Impact, Arial Black, sans-serif;
   color: #0075C9;
@@ -112,6 +122,9 @@ input, textarea {
 
 <div class="box">
   <b>Contact Form</b>
+  <span class="blink">
+OFFICIAL FORM - VERSION 1.0
+</span>
   <hr>
 
   <form action="https://formspree.io/f/xrpzgkoa" method="POST">
