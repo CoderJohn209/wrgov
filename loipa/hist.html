@@ -1,67 +1,100 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html data-qb-installed="true"><head>
 
 <title>SNPDWRGOV</title>
 <link rel="icon" href="https://snpdwrgov.fyi/img/coa.png" type="image/png" sizes="32x32">
 
 <style>
 body {
-  background-color: #FFFFFF;
-  font-family: Arial, sans-serif;
+background-color: #FFFFFF;
+font-family: Arial, sans-serif;
 }
+
+.image-box {
+float: right;
+margin: 10px;
+width: 200px;
+text-align: center;
+border: 0px double black;
+}
+
+.image-boxl {
+float: left;
+margin: 0px;
+width: 200px;
+text-align: center;
+border: 0px double black;
+}
+
+.image-box img {
+width: 80%;
+}
+
+.img-caption {
+font-family: "Courier New", monospace;
+font-size: 14px;
+margin-top: 5px;
+}
+
 .right-img {
-  float: right;
-  margin: 10px;
-  width: 200px;
+float: right;
+margin: 10px;
+width: 200px;
 }
+
+.left-img {
+float: left;
+margin: 15px;
+
+}
+
 .title {
-  font-family: Impact, Arial Black, sans-serif;
-  color: #0075C9;
-  font-size: 60px;
-  text-align: center;
-  margin-top: 20px;
-  text-shadow: 2px 2px 0px #000;
+font-family: Impact, Arial Black, sans-serif;
+color: #0075C9;
+font-size: 60px;
+text-align: center;
+margin-top: 20px;
+text-shadow: 2px 2px 0px #000;
 }
 
 .blink {
-  animation: blink 1s steps(2, start) infinite;
+animation: blink 1s steps(2, start) infinite;
 }
 
 @keyframes blink {
-  to { visibility: hidden; }
+to { visibility: hidden; }
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
 }
 
 .nav {
-  background-color: #000080;
-  text-align: center;
-  padding: 10px;
+background-color: #000080;
+text-align: center;
+padding: 10px;
 }
 
 .nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+color: #FFFFFF;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
 }
 
 .box {
-  border: 2px solid black;
-  padding: 10px;
-  background-color: #F0F0F0;
+border: 2px solid black;
+padding: 10px;
+background-color: #F0F0F0;
 }
 
 .footer {
-  text-align: center;
-  font-size: 12px;
-  margin-top: 20px;
+text-align: center;
+font-size: 12px;
+margin-top: 20px;
 }
 </style>
 
@@ -70,22 +103,22 @@ body {
 <body>
 
 <div class="header">
-  <div class="title">WRÆMBERLAND ONLINE</div>
+<div class="title">WRÆMBERLAND ONLINE</div>
 </div>
 
 <!-- NAV BAR -->
 <div class="nav">
-  <a href="https://snpdwrgov.fyi/index.html">HOME</a>
-  <a href="#">ABOUT</a>
-  <a href="#"><u><i>HISTORY</i></u></a>
-  <a href="https://snpdwrgov.fyi/loipa/chit.html">CITIZENSHIP</a>
-  <a href="https://snpdwrgov.fyi/loipa/cont.html">CONTACT</a>
+<a href="https://snpdwrgov.fyi/index.html">HOME</a>
+<a href="#">ABOUT</a>
+<a href="#"><u><i>HISTORY</i></u></a>
+<a href="https://snpdwrgov.fyi/loipa/chit.html">CITIZENSHIP</a>
+<a href="https://snpdwrgov.fyi/loipa/cont.html">CONTACT</a>
 </div>
 
 <br>
 
 <table border="0" width="800" align="center">
-<tr>
+<tbody><tr>
 
 <td width="500" valign="top">
 
@@ -100,7 +133,12 @@ In 2022, Yiannis Lalos created a conlang named CGA' (Circular Graph A'), which w
 <p>
 On June 4, 2024, Michalis Lalos created a small garden in which he planted various plants and vegetables. On the same day, Ioannis Lalos II had the idea of making the garden a separate state. On June 5, 2024, Michalis Lalos agreed to this idea.
 </p>
-<img src="/img/AnCOA.png" class="right-img">
+<div class="image-box">
+<img src="/img/AnCOA.png" class="">
+<p class="img-caption">Anthofōria Coat of Arms</p>
+</div><div class="image-boxl"><img src="/img/Mihalogania_flag.jpg" class="" width="161">
+<p class="img-caption"><span style="font-size: 12px">Flag of Michalogiannía</span> </p></div>
+
 <p>
 On June 6, 2024, both Michalis and Yiannis (II) Lalos declared the garden a separate state named Michalogiannía, ruled by a diarchy of Yiannis and Mihalis Lalos II. The diarchy was a very fast and efficient way of making the radical changes needed to make Michalogiannía a functioning state.
 </p>
@@ -115,7 +153,7 @@ During the same summer, two de facto states were established by Yiannis Lalos II
 
 <p>
 In the fall of 2024, Yiannis Lalos believed that a language should be created in order to unify Anthofōrians; that is why Salamits was created.
-</p>
+</p><div class="image-box"><img src="/img/Storbuksia.png" class=""><p class="img-caption">Storbuksia Flag</p></div>
 
 <p>
 In January 2025, Michalis Lalos, along with a friend of his, established a new government in the northern part of Anthofōria, thus creating great confusion in the country. As a result, on 2 February 2025, due to internal political conflicts, Anthofōria split into two countries: Storbuksia (also known as Stōrbuksland in Salamits) and Anthofōria. This event is remembered as The Great Division.
@@ -131,7 +169,8 @@ As a result of the Great Division, there was a dispute concerning the borders of
 
 <p>
 Later, on 28 February 2025, Anthofōria’s leader initiated the creation of a union called the Salamic Union (Union of Salamic Nations, U.S.N.), uniting E.Bla.R., DoN, and the newly founded Anthofōria. The union adopted a new flag but maintained socialism as its ideology. This event is referred to as The Great Unification.
-</p>
+</p><div class="image-boxl"><img src="/img/USNF.png" class="" width="150">
+<p class="img-caption"><span style="font-size: 12px">Flag of U.S.N.</span> </p></div>
 
 <p>
 On 14 June 2025, the Liberated Ormós of Piraeus joined the U.S.N., just one day after declaring independence.
@@ -154,10 +193,10 @@ On 11 August 2025, Wræmberland launched the “Ekfar Project”, which included
 </p>
 
 <ul>
-  <li>Claiming a small island near the coast of Symi, now called the Island of Sun (Izlo Dẽ' Suna).</li>
-  <li>Constructing an artificial island named “To Nisi Tou Pedara”.</li>
-  <li>Between 25–26 August 2025, claiming the Big and Small Fruœpêr Islands and Big Iasonus de Mattarõs Island.</li>
-  <li>On 27 August 2025, the re-establishment of the government on the Liberated Òrmos of Piraeus.</li>
+<li>Claiming a small island near the coast of Symi, now called the Island of Sun (Izlo Dẽ' Suna).</li>
+<li>Constructing an artificial island named “To Nisi Tou Pedara”.</li>
+<li>Between 25–26 August 2025, claiming the Big and Small Fruœpêr Islands and Big Iasonus de Mattarõs Island.</li>
+<li>On 27 August 2025, the re-establishment of the government on the Liberated Òrmos of Piraeus.</li>
 </ul>
 
 <p>
@@ -180,12 +219,11 @@ On 13 December 2025, the government of the S.N.P.D. of Wræmberland launched a s
 
 </td>
 </tr>
-</table>
+</tbody></table>
 
 <!-- FOOTER -->
 <div class="footer">
-  © 2026 SNPDWRGOV | Best viewed in Firefox
+© 2026 SNPDWRGOV | Best viewed in Firefox
 </div>
 
-</body>
-</html>
+</body></html>
