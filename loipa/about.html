@@ -1,36 +1,40 @@
 <!DOCTYPE HTML>
-<html data-qb-installed="true"><head>
-<title>About-SNPDWRGOV</title>
-<link rel="icon" href="/img/coa.png" type="image/png" sizes="32x32">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SNPDWRGOV</title>
+<link rel="icon" href="./about_files/coa.png" type="image/png" sizes="32x32">
+
 <style>
 body {
   background-color: #FFFFFF;
   font-family: Arial, sans-serif;
 }
 
-.title { font-family: Impact, Arial Black, sans-serif; color: #0075C9; font-size: 60px; text-align: center; margin-top: 20px; text-shadow: 2px 2px 0px #000; }
-
-.blink {
-  animation: blink 1s steps(2, start) infinite;
+/* TITLE */
+.title {
+  font-family: Impact, Arial Black, sans-serif;
+  color: #0075C9;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 0px #000;
 }
 
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
+/* HEADER */
 .header {
   display: flex;
-  align-items: center;      /* vertical alignment */
-  justify-content: center;  /* center everything */
-  gap: 10px;                /* space between items */
+  justify-content: center;
 }
 
+/* NAV BAR */
 .nav {
   background-color: #000080;
   text-align: center;
   padding: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .nav a {
@@ -40,53 +44,105 @@ body {
   font-weight: bold;
 }
 
+/* BOX STYLE */
 .box {
   border: 2px solid black;
-  padding: 10px;
+  padding: 12px;
   background-color: #F0F0F0;
 }
 
+/* SIDEBAR LINKS */
+.box a {
+  display: block;
+  padding: 4px 0;
+}
+
+/* INFOBOX (government style) */
+.infobox {
+  float: right;
+  width: 260px;
+  margin: 10px;
+  border: 1px solid #000;
+  background: #F9F9F9;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.infobox th {
+  background: #C3D6EF;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.infobox td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+/* SECTION HEADINGS */
+h3 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+}
+
+/* FOOTER */
 .footer {
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
 }
-
 </style>
 </head>
 
 <body>
 
 <div class="header">
-  
   <div class="title">WRÆMBERLAND ONLINE</div>
-  
 </div>
 
-<!-- NAV BAR -->
 <div class="nav">
-  <a href="/index.html">HOME</a>
+  <a href="https://snpdwrgov.fyi/index.html">HOME</a>
   <a href="#"><u><i>ABOUT</i></u></a>
-  <a href="/loipa/hist.html">HISTORY</a>
-  <a href="/loipa/chit.html">CITIZENSHIP</a>
-  <a href="/loipa/cont.html">CONTACT</a>
+  <a href="https://snpdwrgov.fyi/loipa/hist.html">HISTORY</a>
+  <a href="https://snpdwrgov.fyi/loipa/chit.html">CITIZENSHIP</a>
+  <a href="https://snpdwrgov.fyi/loipa/cont.html">CONTACT</a>
 </div>
 
 <br>
 
+<table border="0" width="800" align="center">
+<tr>
+
+<!-- SIDEBAR -->
+<td width="150" valign="top">
+<div class="box">
+<a href="#">Laws</a>
+<a href="#">Ongoing Projects</a>
+<a href="#">Ongoing Votes</a>
+<a href="#">Wræmberland Science Department</a>
+<a href="#">Wræmberland Health Department</a>
+<a href="#">Wræmberland Foreign Realtions Department</a>
+<a href="#">Wræmberland Education Department</a>
+<a href="#">Wræmberland Economics Department</a>
+</div>
+</td>
+
+<!-- MAIN CONTENT -->
+<td width="650" valign="top">
 <div class="box">
 
 <b>About Wræmberland</b>
 <hr>
 
 <!-- INFOBOX -->
-<table border="1" style="float:right; width:260px; margin:10px; text-align:center; background:#F9F9F9; border-collapse:collapse;">
-<tbody><tr style="background:#C3D6EF;">
+<table class="infobox">
+<tr>
 <th colspan="2">S.N.P.D. of Wræmberland</th>
 </tr>
 
 <tr>
-<td colspan="2"><br>
+<td colspan="2" style="text-align:center;">
+<br>
 <img src="/img/Wræmberland_Flag.png" width="120">
 <img src="/img/coa.png" width="85"><br>
 <small>Flag and Coat of Arms</small>
@@ -115,18 +171,16 @@ body {
 
 <tr>
 <td><b>Language</b></td>
-<td>Salamits, Greek(de facto)</td>
+<td>Salamits, Greek (de facto)</td>
 </tr>
 
 <tr>
 <td><b>Type</b></td>
 <td>Micronation</td>
 </tr>
-</tbody></table>
+</table>
 
-
-<!-- MAIN TEXT -->
-
+<!-- TEXT -->
 <p>
 The <b>S.N.P.D. of Wræmberland</b> is a sovereign micronation founded in 2024, established on the principles of Socialist Neo-Participatory Democracy (S.N.P.D.). The state emerged from earlier political entities and evolved into a unified national structure through reform, expansion, and internal development.
 </p>
@@ -158,12 +212,15 @@ The state aims to promote unity, participatory governance, cultural development,
 
 <div style="clear:both;"></div>
 
-
 </div>
+</td>
+
+</tr>
+</table>
+
 <div class="footer">
-  © 2026 SNPDWRGOV | Best viewed in Firefox
+© 2026 SNPDWRGOV | Best viewed in Firefox
 </div>
 
-
-<deepl-input-controller translate="no"></deepl-input-controller></body></html>
-
+</body>
+</html>
