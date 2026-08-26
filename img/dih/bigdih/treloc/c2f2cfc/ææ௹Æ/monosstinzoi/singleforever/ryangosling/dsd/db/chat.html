@@ -6,15 +6,19 @@
 
 <meta charset="UTF-8">
 
-<title>SNPDWRGOV Encrypted Chat</title>
+<title>I/\I</title>
 
 
 <style>
 
+@font-face {
+    font-family: "Raster";
+    src: url("PxPlus_IBM_VGA8.ttf");
+}
+
 body {
-
-    font-family: Arial, sans-serif;
-
+    font-family: "Raster", monospace;
+    background-color: black;
     max-width: 700px;
 
     margin: 40px auto;
@@ -390,7 +394,7 @@ function connect() {
         document
             .getElementById("status")
             .textContent =
-            "🟢 Connected — end-to-end encrypted";
+            "Connected — end-to-end encrypted";
 
     };
 
@@ -400,7 +404,7 @@ function connect() {
         document
             .getElementById("status")
             .textContent =
-            "🔴 Disconnected";
+            "Disconnected";
 
     };
 
@@ -410,7 +414,7 @@ function connect() {
         document
             .getElementById("status")
             .textContent =
-            "⚠️ Connection error";
+            "Connection error";
 
     };
 
