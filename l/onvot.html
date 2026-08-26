@@ -1,0 +1,935 @@
+<html data-qb-installed="true">
+<head>
+
+<title>SNPDWRGOV - Ongoing Votes</title>
+<link rel="icon" href="/img/coa.png" type="image/png" sizes="32x32">
+
+<style>
+
+body {
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.title {
+  font-family: Impact, Arial Black, sans-serif;
+  color: #0075C9;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav {
+  background-color: #000080;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #F0F0F0;
+}
+
+.vote-box {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.vote-header {
+  background-color: #000080;
+  color: #FFFFFF;
+  padding: 8px;
+  font-weight: bold;
+  margin: -10px -10px 10px -10px;
+}
+
+.vote-info {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vote-info td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.vote-info td:first-child {
+  background-color: #F0F0F0;
+  font-weight: bold;
+  width: 160px;
+}
+
+.question {
+  border: 1px solid black;
+  background-color: #FFFFCC;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+button {
+  padding: 7px 15px;
+  border: 1px solid black;
+  background-color: #EEEEEE;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #CCCCCC;
+}
+
+.vote-option {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #F5F5F5;
+}
+
+.vote-option:hover {
+  background-color: #E5E5E5;
+}
+
+.vote-option label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button {
+  background-color: #000080;
+  color: #FFFFFF;
+  border: 1px solid black;
+  padding: 9px 20px;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #0000AA;
+}
+
+.status-open {
+  color: #008000;
+  font-weight: bold;
+}
+
+.status-closed {
+  color: #AA0000;
+  font-weight: bold;
+}
+
+.notice {
+  border: 1px solid black;
+  background-color: #FFFFCC;
+  padding: 8px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+  <div class="title">WRÆMBERLAND ONLINE</div>
+
+</div>
+
+
+<!-- NAV BAR -->
+
+<div class="nav">
+
+  <a href="/index.html">HOME</a>
+
+  <a href="/loipa/about.html">ABOUT</a>
+
+  <a href="/loipa/hist.html">HISTORY</a>
+
+  <a href="/loipa/chit.html">CITIZENSHIP</a>
+
+  <a href="/loipa/cont.html">CONTACT</a>
+
+</div>
+
+
+<br>
+
+
+<table border="0" width="800" align="center">
+
+<tbody>
+
+<tr>
+
+<td valign="top">
+
+
+<!-- BACK -->
+
+<div class="box">
+
+← <a href="/l/votes.html">
+<u><i><b>Back to Votes</b></i></u>
+</a>
+
+</div>
+
+
+<br>
+
+
+<!-- PAGE INTRODUCTION -->
+
+<div class="box">
+
+<b>Ongoing Votes & Referendums</b>
+
+<hr>
+
+This is the official online voting portal of the
+Socialist Neo-Participatory Democracy of Wræmberland.
+
+<br><br>
+
+The following referendum is currently open to eligible
+citizens.
+
+</div>
+
+
+<br>
+
+
+<!-- REFERENDUM -->
+
+<div class="vote-box">
+
+<div class="vote-header">
+
+REFERENDUM No. 001
+
+</div>
+
+
+<table class="vote-info">
+
+<tr>
+
+<td>Status</td>
+
+<td>
+<span class="status-open">OPEN</span>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Opening Date</td>
+
+<td>
+26 August 2026
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Closing Date</td>
+
+<td>
+Not specified
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Eligibility</td>
+
+<td>
+Citizens of Wræmberland
+</td>
+
+</tr>
+
+</table>
+
+
+<br>
+
+
+<!-- QUESTION -->
+
+<div class="question">
+
+Question:
+
+<br><br>
+
+Should the government of the S.N.P.D. of Wræmberland
+continue with the current proposal?
+
+</div>
+
+
+<br>
+
+
+<!-- CITIZEN VERIFICATION -->
+
+<div class="box">
+
+<b>Citizen Verification</b>
+
+<hr>
+
+Enter your Citizen ID or registered name to verify your
+eligibility to vote.
+
+<br><br>
+
+<input
+  type="text"
+  id="citizenID"
+  placeholder="Citizen ID / Name"
+  autocomplete="off"
+>
+
+<br><br>
+
+<button type="button" onclick="checkCitizen()">
+
+Verify Citizen
+
+</button>
+
+<p id="citizenResult"></p>
+
+</div>
+
+
+<br>
+
+
+<!-- BALLOT -->
+
+<div id="votingArea" class="hidden">
+
+<div class="box">
+
+<b>Official Ballot</b>
+
+<hr>
+
+Please select one option:
+
+<br><br>
+
+
+<!--
+  This is the actual Formspree form.
+  The Citizen ID and selected vote will be
+  submitted to your Formspree endpoint.
+-->
+
+<form
+  id="voteForm"
+  action="https://formspree.io/f/mbgjrrpj"
+  method="POST"
+>
+
+
+<!-- CITIZEN ID -->
+
+<input
+  type="hidden"
+  id="submittedCitizen"
+  name="Citizen ID"
+>
+
+
+<!-- REFERENDUM -->
+
+<input
+  type="hidden"
+  name="Referendum"
+  value="REFERENDUM No. 001"
+>
+
+
+<!-- QUESTION -->
+
+<input
+  type="hidden"
+  name="Question"
+  value="Should the government of the S.N.P.D. of Wræmberland continue with the current proposal?"
+>
+
+
+<!-- YES -->
+
+<div class="vote-option">
+
+<label>
+
+<input
+  type="radio"
+  name="Vote"
+  value="YES"
+  required
+>
+
+YES — Approve
+
+</label>
+
+</div>
+
+
+<!-- NO -->
+
+<div class="vote-option">
+
+<label>
+
+<input
+  type="radio"
+  name="Vote"
+  value="NO"
+>
+
+NO — Reject
+
+</label>
+
+</div>
+
+
+<!-- ABSTAIN -->
+
+<div class="vote-option">
+
+<label>
+
+<input
+  type="radio"
+  name="Vote"
+  value="ABSTAIN"
+>
+
+ABSTAIN
+
+</label>
+
+</div>
+
+
+<br>
+
+
+<button
+  type="submit"
+  class="submit-button"
+>
+
+SUBMIT VOTE
+
+</button>
+
+
+</form>
+
+
+<p id="voteResult"></p>
+
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<!-- NOTICE -->
+
+<div class="notice">
+
+<b>IMPORTANT NOTICE</b>
+
+<br><br>
+
+Only eligible citizens may participate in this referendum.
+Each citizen should submit only one vote.
+
+<br><br>
+
+Once submitted, a vote should be considered final.
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<!-- INFORMATION -->
+
+<div class="box">
+
+<b>Voting Information</b>
+
+<hr>
+
+<ul>
+
+<li>
+Only citizens appearing in the official citizen registry
+may vote.
+</li>
+
+<li>
+Each citizen may participate in the referendum.
+</li>
+
+<li>
+The voting period is determined by the official referendum
+notice.
+</li>
+
+<li>
+Available choices are <b>YES</b>, <b>NO</b>, and
+<b>ABSTAIN</b>.
+</li>
+
+<li>
+Votes are submitted electronically through the official
+voting system.
+</li>
+
+</ul>
+
+</div>
+
+
+<br>
+
+
+<!-- OFFICIAL REGISTRY -->
+
+<div class="box">
+
+<b>Official Electoral Registry</b>
+
+<hr>
+
+This voting portal uses the official citizen registry
+maintained by SNPDWRGOV.
+
+<br><br>
+
+<span class="small">
+
+Government Electoral Registry<br>
+S.N.P.D. of Wræmberland
+
+</span>
+
+</div>
+
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+© 2026 SNPDWRGOV | Best viewed in Firefox
+
+</div>
+
+
+<script>
+
+/*
+=========================================================
+CITIZEN VERIFICATION
+=========================================================
+Checks the submitted Citizen ID / Name against:
+
+/l/list.txt
+
+Each citizen should occupy one line.
+=========================================================
+*/
+
+let verifiedCitizen = "";
+
+
+async function checkCitizen() {
+
+    const input =
+        document.getElementById("citizenID");
+
+    const result =
+        document.getElementById("citizenResult");
+
+    const votingArea =
+        document.getElementById("votingArea");
+
+    const submittedCitizen =
+        document.getElementById("submittedCitizen");
+
+
+    const citizen =
+        input.value.trim();
+
+
+    /* Hide ballot until verification succeeds */
+
+    votingArea.classList.add("hidden");
+
+
+    result.textContent = "";
+
+    result.className = "";
+
+
+    /* Empty input */
+
+    if (citizen === "") {
+
+        result.textContent =
+            "Please enter your Citizen ID / Name.";
+
+        result.className = "error";
+
+        return;
+
+    }
+
+
+    result.textContent =
+        "Checking Citizen Registry...";
+
+    result.className = "";
+
+
+    try {
+
+
+        /*
+        Load the official citizen registry.
+        */
+
+        const response =
+            await fetch("/l/list.txt", {
+                cache: "no-store"
+            });
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Could not load citizen registry."
+            );
+
+        }
+
+
+        const text =
+            await response.text();
+
+
+        /*
+        Convert the registry into an array.
+
+        Example list.txt:
+
+        CITIZEN001
+        John Smith
+        CITIZEN003
+        Maria
+
+        Each line is treated as one citizen.
+        */
+
+        const citizens =
+            text
+                .split(/\r?\n/)
+                .map(citizen => citizen.trim())
+                .filter(citizen => citizen !== "");
+
+
+        /*
+        Case-insensitive comparison.
+        */
+
+        const normalizedInput =
+            citizen.toLowerCase();
+
+
+        const found =
+            citizens.some(
+                registeredCitizen =>
+                    registeredCitizen.toLowerCase() ===
+                    normalizedInput
+            );
+
+
+        if (found) {
+
+
+            /*
+            Citizen successfully verified.
+            */
+
+            verifiedCitizen = citizen;
+
+
+            /*
+            Put the verified citizen into the
+            hidden Formspree field.
+            */
+
+            submittedCitizen.value =
+                citizen;
+
+
+            result.textContent =
+                "Citizen verified successfully.";
+
+            result.className =
+                "success";
+
+
+            /*
+            Show ballot.
+            */
+
+            votingArea.classList.remove("hidden");
+
+
+        }
+
+        else {
+
+
+            /*
+            Citizen was not found.
+            */
+
+            verifiedCitizen = "";
+
+            submittedCitizen.value = "";
+
+
+            result.textContent =
+                "Citizen ID / Name was not found in the Citizen Registry.";
+
+            result.className =
+                "error";
+
+        }
+
+
+    }
+
+    catch (error) {
+
+
+        console.error(error);
+
+
+        result.textContent =
+            "Unable to access the Citizen Registry.";
+
+        result.className =
+            "error";
+
+    }
+
+}
+
+
+/*
+=========================================================
+VOTE SUBMISSION
+=========================================================
+Make sure the citizen was verified before Formspree
+receives the vote.
+=========================================================
+*/
+
+document
+    .getElementById("voteForm")
+    .addEventListener(
+        "submit",
+        function(event) {
+
+
+            /*
+            No verified citizen
+            */
+
+            if (verifiedCitizen === "") {
+
+                event.preventDefault();
+
+                alert(
+                    "Citizen verification is required before voting."
+                );
+
+                return;
+
+            }
+
+
+            /*
+            Make sure the hidden Citizen ID field
+            contains the verified citizen.
+            */
+
+            document
+                .getElementById("submittedCitizen")
+                .value = verifiedCitizen;
+
+
+            /*
+            Find selected vote.
+            */
+
+            const selected =
+                document.querySelector(
+                    'input[name="Vote"]:checked'
+                );
+
+
+            if (!selected) {
+
+                event.preventDefault();
+
+                alert(
+                    "Please select YES, NO, or ABSTAIN."
+                );
+
+                return;
+
+            }
+
+
+            /*
+            Final confirmation.
+            */
+
+            const confirmation =
+                confirm(
+                    "You selected: " +
+                    selected.value +
+                    "\n\n" +
+                    "Are you sure you want to submit this vote?"
+                );
+
+
+            if (!confirmation) {
+
+                event.preventDefault();
+
+                return;
+
+            }
+
+
+            /*
+            Form is allowed to continue normally.
+            Formspree receives:
+
+            Citizen ID
+            Referendum
+            Question
+            Vote
+            */
+
+        }
+    );
+
+
+</script>
+
+
+</body>
+
+</html>
