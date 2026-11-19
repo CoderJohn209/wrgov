@@ -1,12 +1,20 @@
 @echo off
 color 8
 echo LOADING.......................................................................................
+Echo Hello everyone.After moving to another website for updates because the other stopped working 
+Echo for sum stupid reason, we are here to announce that this will be the site we will be using 
+Echo from now and on.We made a lot of changes , fixed bugs and made the CS_NOTEPAD better , you
+Echo can now edit previous lines before saving.We also fixed the change background and text color
+Echo in settings.
+Echo.
+Echo Glad you are here -- JL STUDIOS
+pause >nul
 echo CLLIC
 ping localhost -n 2 >nul
 echo 0
 ping localhost -n 2 >nul
 echo loading version
-set ver=1.2
+set ver=2.0
 echo %ver%
 ping localhost -n 2 >nul
 echo 1
