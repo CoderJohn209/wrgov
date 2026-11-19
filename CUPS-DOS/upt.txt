@@ -24,7 +24,7 @@ ping localhost -n 2 >nul
 cls
 echo chenking for updates:
 cd C:\Users\%USERNAME%\Desktop\CUPS\code
-ECHO NOTICE UPDATE DOES NOT WORK TEMPORELRY :
+ECHO Updates now work (Yipeee!) :
 set /p CHFRUP=Check for Updates?[y/n]:
 if %CHFRUP%==y CALL upd-check.bat
 if %CHFRUP%==Y CALL upd-check.bat
